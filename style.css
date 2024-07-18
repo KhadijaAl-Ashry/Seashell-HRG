@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;;
+}
+ul{
+    list-style: none;
+}
+
+.text{
+    color: #80c3ff;
+}
+
+header{
+    height: 120vh;
+    background-image: url(./img/background/WhatsApp\ Imbackground.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar ul{
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover{
+    border-bottom: 2px solid #80c3ff;
+}
+
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    
+}
+
+
+
+header .content h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+header .content p{
+    margin: 20px 0px 40px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+header *{
+    z-index: 10;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    /* background: url(./img/background/offer-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh; */
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+}
+
+#about .title{
+    margin: 4rem;
+    text-align: center;
+}
+
+#about h2{
+    margin: 20px;
+    font-size: 40px;
+    color: #383848;
+
+}
+
+#about .about-contnet{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-contnet video{
+    width: 600px;
+    height: 400px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+#about .about-contnet p{
+    margin-right: 7rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color:#383848
+    
+}
+
+.btn-secondary{
+    color: #fff;
+    display: inline-block;
+    background-color: #383848;
+    border: none;
+    margin: 20px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    background: #80c3ff;
+}
+   /* Menu start Section */
+
+#menu{
+  background: url(./img/background/offer-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding:  5rem 0;
+
+}  
+
+#menu .title{
+    margin: 4rem;
+    text-align: center;
+    font-size: 25px;
+    align-items: center;
+}
+
+#menu h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#menu h3{
+    border-bottom: 1px;
+    color: #fff;
+    position: relative;
+
+     
+}
+#menu .menu-items .menu-item span{
+    color: #80c3ff;
+    text-decoration: underline;
+   
+}
+
+#menu .btn{
+    color: #fff;
+    display: block;
+    background-color: #444444;
+    font-weight: 600;
+    margin: auto;
+
+}
+
+#menu .btn:hover{
+    color: #fff;
+    background-color: #80c3ff;
+}
+
+#menu .menu-items{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#menu .menu-items .menu-item img{
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Menu End */
+
+/* Daytime Start */
+#daytime{
+    background: url(./img/background/background222.jpg) center center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    background-attachment: scroll;
+}
+
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+
+#daytime .daytime-items p{
+   font-size: 18px;
+    font-weight: 600;
+}
+
+/* Daytime End */
+
+/* gallery start */
+
+#gallery h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #383848
+}
+
+#gallery .img-gallery img{
+    width: 230px;
+    height: 200px;;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#gallery .img-gallery{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Team start */
+#team .img-team img{
+    width: 280px;
+    height: 200px;;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#team  h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #383848
+    
+}
+
+/* team end */
+
+/* contact start */
+#contact{
+    padding: 5rem 0;
+    background: url(./img/background/offer-background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+
+#contact .contact-content .contact-info h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#contact .contact-content .contact-info p{
+    color: #fff;
+}
+
+#contact .contact-content .contact-info i{
+    margin-right: 5px;
+    color: #fff;
+}
+
+/* Follow Us start */
+
+
+#contact .contact-content .contact-follow h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#contact .contact-content .contact-follow a i{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contact .contact-content .contact-follow a i:hover{
+    color: #fff;
+    background-color: #80c3ff;
+}
+#contact .contact-content .contact-follow p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* contact end */
+
+
+/* Website for meduim screens */
+@media(max-width:1000px){
+
+
+    #navbar img{
+        margin-left: 20px;
+    }
+
+    #header{
+        width: 40px;
+    }
+
+    #navbar ul{
+        margin-right: 20px;
+    }
+
+    #navbar ul li a {
+        padding:10px;
+    }
+
+    header .content h1{
+        font-size: 28px;
+    }
+
+    #about{
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    #about .about-contnet p{
+        margin-right: 2rem;
+    }
+
+    #about .about-contnet video{
+        width: 250px;
+    }
+
+    #menu .menu-items{
+        display: block;
+    }
+
+    #gallery .img-gallery{
+        display: block;
+    }
+
+    /* Mobile Device */
+
+    @media(max-width:600px){
+
+        #navbar{
+            flex-direction: column;
+        }
+
+        #navbar img{
+            margin-bottom: 20px;
+        }
+
+        header .content h1{
+            font-size: 18px;
+        }
+
+        header .content p{
+            font-size: 14px;
+        }
+
+        #about .about-contnet{
+            flex-direction: column;
+        }
+
+        #menu .menu-items .menu-item{
+            margin: 20px;
+        }
+
+        #daytime .daytime-items{
+            display: block;
+            height: auto;
+            padding: 30px 0;
+        }
+
+        #daytime .daytime-items .daytime-item{
+            margin-top: 20px;
+        }
+
+    }
+
+}
+
